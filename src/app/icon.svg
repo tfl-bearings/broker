@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="mTile" x1="0" y1="0" x2="0.75" y2="1">
+      <stop offset="0" stop-color="#1D4680"/>
+      <stop offset="0.52" stop-color="#0E2951"/>
+      <stop offset="1" stop-color="#07182F"/>
+    </linearGradient>
+    <linearGradient id="mStroke" x1="0.08" y1="0" x2="0.92" y2="1">
+      <stop offset="0" stop-color="#A8CEFF"/>
+      <stop offset="0.48" stop-color="#7FB2FF"/>
+      <stop offset="1" stop-color="#B49BFF"/>
+    </linearGradient>
+    <linearGradient id="mSheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#mTile)"/>
+  <rect width="64" height="34" rx="16" fill="url(#mSheen)"/>
+
+  <!-- Meridian: a longitude line through the mark. Fades out at favicon size,
+       leaving a clean monogram. -->
+  <path d="M32 12.5 V51.5" stroke="#B49BFF" stroke-opacity="0.3" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- The M, drawn so its centre vertex reads as a chart trough and recovery. -->
+  <path d="M16.5 46.5 V23 L32 36.2 L47.5 23 V46.5"
+        fill="none" stroke="url(#mStroke)" stroke-width="6.6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="0.8" y="0.8" width="62.4" height="62.4" rx="15.2"
+        fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.6"/>
+</svg>

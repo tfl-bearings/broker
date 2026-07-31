@@ -1,0 +1,112 @@
+import type { Jurisdiction } from "@/lib/types";
+
+/**
+ * Indicative market estimates as at 2026. NOT legal advice.
+ * TODO(launch): have a licensing partner verify every figure before publishing.
+ */
+export const jurisdictions: Jurisdiction[] = [
+  {
+    name: "Seychelles",
+    tier: "entry",
+    regulator: "FSA · SECURITIES DEALER",
+    capital: "~$50,000",
+    timeline: "3–5 months",
+    profile: "Cost-efficient",
+  },
+  {
+    name: "Mauritius",
+    tier: "mid",
+    regulator: "FSC · INVESTMENT DEALER",
+    capital: "~$25,000+",
+    timeline: "4–6 months",
+    profile: "Treaty network",
+  },
+  {
+    name: "Comoros",
+    tier: "entry",
+    regulator: "AOFA / MWALI",
+    capital: "Low",
+    timeline: "3–6 weeks",
+    profile: "Fastest entry",
+  },
+  {
+    name: "St. Lucia",
+    tier: "entry",
+    regulator: "IBC STRUCTURE",
+    capital: "Nominal",
+    timeline: "2–4 weeks",
+    profile: "Entry level",
+  },
+  {
+    name: "Vanuatu",
+    tier: "entry",
+    regulator: "VFSC · DEALER IN SECURITIES",
+    capital: "~$50,000",
+    timeline: "2–4 months",
+    profile: "Established offshore",
+  },
+  {
+    name: "Belize",
+    tier: "mid",
+    regulator: "FSC · SECURITIES",
+    capital: "~$500,000",
+    timeline: "4–6 months",
+    profile: "Mid-tier offshore",
+  },
+  {
+    name: "Labuan, Malaysia",
+    tier: "mid",
+    regulator: "LFSA · MONEY BROKING",
+    capital: "~$120,000",
+    timeline: "4–8 months",
+    profile: "Asia-facing",
+  },
+  {
+    name: "Dubai",
+    tier: "premium",
+    regulator: "DFSA · CATEGORY 3A / 4",
+    capital: "$500K–$2M",
+    timeline: "9–14 months",
+    profile: "Premium GCC",
+  },
+  {
+    name: "Abu Dhabi",
+    tier: "premium",
+    regulator: "ADGM · FSRA",
+    capital: "$250K–$2M",
+    timeline: "9–14 months",
+    profile: "Institutional",
+  },
+  {
+    name: "Cyprus",
+    tier: "premium",
+    regulator: "CySEC · CIF",
+    capital: "€125K–€730K",
+    timeline: "9–18 months",
+    profile: "EU passporting",
+  },
+  {
+    name: "United Kingdom",
+    tier: "premium",
+    regulator: "FCA · MATCHED PRINCIPAL",
+    capital: "£125K+",
+    timeline: "12–18 months",
+    profile: "Tier-1 credibility",
+  },
+  {
+    name: "Australia",
+    tier: "premium",
+    regulator: "ASIC · AFSL",
+    capital: "A$1M+",
+    timeline: "12–18 months",
+    profile: "Tier-1 APAC",
+  },
+  {
+    name: "South Africa",
+    tier: "mid",
+    regulator: "FSCA · ODP LICENCE",
+    capital: "Variable",
+    timeline: "6–12 months",
+    profile: "Africa gateway",
+  },
+];

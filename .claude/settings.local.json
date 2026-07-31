@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\hp\\\\Desktop\\\\fxsup\\\\design-reference\")",
+      "PowerShell(Move-Item -Path \"c:\\\\Users\\\\hp\\\\Desktop\\\\fxsup\\\\index.html\" -Destination \"c:\\\\Users\\\\hp\\\\Desktop\\\\fxsup\\\\design-reference\\\\index.html\" -Force)"
+    ]
+  }
+}
