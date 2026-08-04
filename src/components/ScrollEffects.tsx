@@ -90,6 +90,45 @@ export default function ScrollEffects() {
       cleanups.push(() => cio.disconnect());
     }
 
+    /*
+     * Same-page anchors (#pricing, #crm, #svc-..., the bare "#" on the logo)
+     * scroll to their target but must not touch the address bar — a deployed
+     * marketing site shouldn't grow a trailing #fragment every time a visitor
+     * clicks a nav link. Anything not starting with "#" (real routes, mailto:)
+     * is left alone. "svc-" targets are left for ServiceExplorer's own
+     * listener, which has to open the right tab before it can scroll to them.
+     */
+    const onAnchorClick = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+
+      const anchor = (event.target as HTMLElement | null)?.closest?.<HTMLAnchorElement>(
+        'a[href^="#"]',
+      );
+      if (!anchor) return;
+
+      event.preventDefault();
+
+      const id = decodeURIComponent(anchor.getAttribute("href")!.slice(1));
+      if (!id || id.startsWith("svc-")) {
+        if (!id) window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+        return;
+      }
+
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    };
+    document.addEventListener("click", onAnchorClick);
+    cleanups.push(() => document.removeEventListener("click", onAnchorClick));
+
     return () => cleanups.forEach((fn) => fn());
   }, []);
 
