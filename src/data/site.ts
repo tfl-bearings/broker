@@ -22,7 +22,7 @@ export const site = {
   tagline:
     "MetaTrader 5 Manager environments, Forex CRM, liquidity connectivity, payments and licensing support for brokerages, introducing brokers and proprietary trading firms.",
   description:
-    "Rent a fully managed MetaTrader 5 Manager environment on a flat monthly fee. Forex CRM, LP bridge, A-book/B-book routing, PAMM, payments, licensing and branded terminals. Live in 2-3 days, no setup fee.",
+    "Rent a fully managed MetaTrader 5 Manager environment on a flat monthly fee. Forex CRM, LP bridge, A-book/B-book routing, PAMM, payments and licensing support. Live in 2-3 days, no setup fee.",
 } as const;
 
 export const announcement = {
@@ -56,9 +56,8 @@ export const footerColumns: FooterColumn[] = [
     links: [
       { label: "MT5 Manager Rental", href: "#pricing" },
       svc("MT5 & MT4 Grey Label", "MT5 & MT4 Grey Label"),
-      svc("MT5 & MT4 White Label", "MT5 & MT4 White Label"),
       svc("MT5 Main Label & acquisition", "MT5 Main Label"),
-      svc("Branded WebTrader"),
+      svc("WebTrader platform"),
       svc("iOS & Android apps"),
       { label: "Compare structures", href: "#compare" },
     ],

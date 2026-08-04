@@ -124,7 +124,7 @@ export default function ServiceExplorer() {
 
         {/*
           Every panel is rendered, with inactive ones hidden rather than
-          unmounted. All 41 services stay in the served HTML so search engines
+          unmounted. All 40 services stay in the served HTML so search engines
           index the full capability map, not just the first tab.
         */}
         {serviceCategories.map((category) => (

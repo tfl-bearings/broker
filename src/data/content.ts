@@ -40,8 +40,8 @@ export const tickerItems: TickerItem[] = [
   { label: "KYC / AML", value: "AUTOMATED", accent: true },
   { label: "IB ENGINE", value: "MULTI-TIER" },
   { label: "PSP GATEWAYS", value: "INTEGRATED", accent: true },
-  { label: "WEBTRADER", value: "BRANDED" },
-  { label: "iOS & ANDROID", value: "WHITE LABEL", accent: true },
+  { label: "WEBTRADER", value: "INCLUDED" },
+  { label: "iOS & ANDROID", value: "MT5 MOBILE", accent: true },
   { label: "VIRTUAL DEALER", value: "PLUGIN" },
   { label: "ANTI-SCALPING", value: "PLUGIN", accent: true },
   { label: "24/7 NOC", value: "MONITORED" },
@@ -83,7 +83,7 @@ export const includedItems: IncludedItem[] = [
     title: "Every",
     highlight: "device",
     description:
-      "Client terminals for Desktop, Android and iOS — ready to carry your brand.",
+      "Client terminals for Desktop, Android and iOS — the full order lifecycle on every device.",
   },
   {
     icon: "tag",
@@ -223,7 +223,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Will my clients know it is a rented environment?",
     answer:
-      "Your Trader’s Room, WebTrader, mobile apps and all client communications carry your brand entirely. On Tier 01 the MetaTrader server entry itself uses a generic name from our shortlist rather than your own. A dedicated branded server entry is available as an add-on, and is included in the upgrade path to a full white label.",
+      "Your broker website, Trader’s Room and all client communications carry your brand. The trading platform itself does not: clients connect through the standard MetaTrader terminals, and the server entry uses a generic name from our shortlist rather than your own. We are direct about that, because any provider promising you a fully branded MetaTrader platform on a rental cannot deliver it.",
   },
   {
     question: "What is the difference between A-book and B-book here?",
@@ -233,12 +233,12 @@ export const faqItems: FaqItem[] = [
   {
     question: "Is the CRM really included, or is it an upsell?",
     answer:
-      "Included on every tier. Tier 01 ships CRM Starter — leads, KYC workflow, wallets and finance requests. Tier 02 adds the IB engine, automations and advanced reporting. Tier 03 includes the full enterprise back office plus the branded client portal, website and mobile apps. There is no tier where you have to buy a CRM separately to operate.",
+      "Included on every tier. Tier 01 ships CRM Starter — leads, KYC workflow, wallets and finance requests. Tier 02 adds the IB engine, automations and advanced reporting. Tier 03 includes the full enterprise back office plus the client portal and your own broker website. There is no tier where you have to buy a CRM separately to operate.",
   },
   {
     question: "Can I upgrade or move away later?",
     answer:
-      "Yes. Moving from Tier 01 to a dedicated white label environment keeps your CRM, branding and client portal identical — only the underlying server changes, and clients experience no interruption. If you leave us entirely, you get your client and account data in a documented export format. We do not hold your book hostage.",
+      "Yes. Moving between tiers keeps your CRM, branding and client portal identical — only the underlying trading environment changes, and clients experience no interruption. If you leave us entirely, you get your client and account data in a documented export format. We do not hold your book hostage.",
   },
   {
     question: "What is the contract term?",
@@ -259,7 +259,6 @@ export const interestOptions: SelectOption[] = [
   { value: "advanced", label: "MT5 Manager Rental — Advanced", selected: true },
   { value: "full", label: "MT5 Manager Rental — Full" },
   { value: "grey", label: "MT5 / MT4 Grey Label" },
-  { value: "white", label: "MT5 / MT4 White Label" },
   { value: "main", label: "Main Label acquisition" },
   { value: "crm", label: "Forex CRM only" },
   { value: "prop", label: "Prop firm setup" },

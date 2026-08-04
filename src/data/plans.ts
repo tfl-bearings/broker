@@ -61,22 +61,16 @@ export const plans: Plan[] = [
     tier: "Tier 03",
     name: "Full",
     description:
-      "The complete turnkey brokerage — server, branded website, CRM and apps, ready to onboard clients.",
+      "The complete turnkey package — your own broker website, the full CRM enterprise back office and integrated payments, ready to onboard clients.",
     price: { monthly: "5,000", annual: "4,150" },
     note: { monthly: MONTHLY_NOTE, annual: ANNUAL_NOTE },
     inherits: "Advanced",
     features: [
       "Branded broker website",
-      "Branded WebTrader platform",
-      "White-label iOS & Android apps",
       "Full CRM Enterprise & back office",
       "Payment gateway integration",
-      "Copy trading & social module",
-      "Unlimited groups & accounts",
-      "Custom plugin & EA development hours",
-      "Licensing & formation advisory",
     ],
-    audience: "Launch a complete brand, end to end",
+    audience: "For brokers taking on their own client base",
     cta: "Get Full",
   },
 ];
@@ -91,11 +85,6 @@ export const addOns: AddOn[] = [
     name: "Additional account blocks",
     description: "Scale live account capacity in blocks as you grow.",
     price: "Quoted per block",
-  },
-  {
-    name: "Dedicated server name",
-    description: "Your own branded server entry instead of a shared generic name.",
-    price: "Quoted",
   },
   {
     name: "Company formation",

@@ -1,7 +1,7 @@
 import type { Plugin, ServiceCategory } from "@/lib/types";
 import { hue, spectrum } from "./hues";
 
-/** Eight disciplines, 41 services. Add a service by adding an object. */
+/** Eight disciplines, 40 services. Add a service by adding an object. */
 export const serviceCategories: ServiceCategory[] = [
   {
     id: "platforms",
@@ -22,27 +22,21 @@ export const serviceCategories: ServiceCategory[] = [
         tags: ["MT4", "MT5", "Fastest launch"],
       },
       {
-        title: "MT5 & MT4 White Label",
-        description:
-          "A dedicated branded environment with your own server entry, full symbol and group control, and complete separation from other brokers on the platform.",
-        tags: ["Dedicated", "Full control"],
-      },
-      {
         title: "MT5 Main Label & acquisition",
         description:
           "Access to established Main Label entities — including ready-registered structures with existing account capacity, for operators who need to move immediately.",
         tags: ["Entity transfer", "Due diligence"],
       },
       {
-        title: "Branded WebTrader",
+        title: "WebTrader platform",
         description:
-          "A browser-based trading terminal in your colours and on your domain. Advanced charting, one-click trading, watchlists, and full order-type support with no download required.",
-        tags: ["50+ indicators", "Your domain"],
+          "A browser-based trading terminal for your clients. Advanced charting, one-click trading, watchlists, and full order-type support with no download required.",
+        tags: ["50+ indicators", "No download"],
       },
       {
         title: "iOS & Android apps",
         description:
-          "Native mobile trading apps published under your own developer account, with push notifications, biometric login and the full order lifecycle on device.",
+          "Mobile trading on the standard MetaTrader apps for iOS and Android, with push notifications, biometric login and the full order lifecycle on device.",
         tags: ["App Store", "Google Play", "Biometrics"],
       },
     ],

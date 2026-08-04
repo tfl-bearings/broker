@@ -41,10 +41,10 @@ export default function HowItWorks() {
             ))}
             <p className="server-note">
               Generic, neutral server names that are not tied to any visible
-              third-party brand. Your clients see your branding throughout the
-              Trader&rsquo;s Room, WebTrader and mobile apps. Final options are
-              confirmed at provisioning, and a dedicated branded server entry is
-              available as an add-on.
+              third-party brand. Your clients see your branding across the
+              Trader&rsquo;s Room and your broker website; the MetaTrader
+              terminals themselves stay standard. Final options are confirmed at
+              provisioning.
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function Hero() {
           <p className="sub reveal" style={delay(170)}>
             A fully managed MetaTrader 5 Manager environment on a simple monthly
             rent &mdash; API access, custom spreads and commissions, A-book and
-            B-book routing, a complete Forex CRM, and branded terminals on every
+            B-book routing, a complete Forex CRM, and client terminals on every
             device. No capital lock-in. No setup charges.
           </p>
 

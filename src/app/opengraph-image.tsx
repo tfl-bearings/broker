@@ -86,7 +86,7 @@ export default function OpengraphImage() {
 
         {/* Stat row */}
         <div style={{ display: "flex", gap: 18 }}>
-          {["2–3 days to live", "$0 setup fee", "41 services", "A-book / B-book"].map((t) => (
+          {["2–3 days to live", "$0 setup fee", "40 services", "A-book / B-book"].map((t) => (
             <div
               key={t}
               style={{
